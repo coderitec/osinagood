@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OsinaGood Construction Limited</title>
+    <link rel="icon" href="img/logos/logo.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="img/logos/logo.png" type="image/gif" sizes="32x32">
+    <link rel="icon" href="img/logos/logo.png" type="image/gif" sizes="64x64">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- UIKIT -->
+    <link rel="stylesheet" href="lib/uikit/css/uikit.min.css" />
+    <script src="lib/uikit/js/uikit.min.js"></script>
+    <script src="lib/uikit/js/uikit-icons.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<header>
+    <!-- Main Navbar -->
+    <nav class="uk-navbar navbar" id="myNavbar">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active navbar-brand">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </li> 
+            </ul>
+        </div>
+        <div class="uk-navbar-center navCenter">
+            <ul class="uk-navbar-nav uk-visible@m nav-items">
+                <li><a class="nav-link" href="about.html">about</a></li>
+                <li><a class="nav-link shop-link" href="projects.html">projects</a></li>
+                <li><a class="nav-link" href="contact.html">contact</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right" id="navNav">
+            <ul class="uk-navbar-nav uk-visible@m nav-icons">
+                <button id="time">
+                  <script>
+                    let hour = new Date().getHours();
+                    if( hour < 12){
+                      document.getElementById('time').innerHTML = "Good Morning!";
+                    }
+                    else if( hour < 16){
+                      document.getElementById('time').innerHTML = "Good Day!";
+                    }
+                    else{
+                      document.getElementById('time').innerHTML = "Good Evening!";
+                    }
+                  </script>
+                </button>
+                <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="instagram"></a>
+                <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="whatsapp"></a>
+            </ul>
+            <div class="navToggle">
+                <a href="#" class="uk-navbar-toggle toggleIcon uk-hidden@m" uk-toggle="target: #sidenav">
+                  <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" id="toggleIcon">
+    
+                  <g>
+                   <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+                  </g>
+                  <g>
+                   <path id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z"/>
+                  </g>
+                 </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="sidenav" uk-offcanvas="flip: true; mode: slide; overlay:true" class="uk-offcanvas">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav sideItems">
+            <li><a class="nav-link" href="index.html"><span class="uk-margin-small-right" uk-icon="home"></span> home</a></li>
+            <li><a class="nav-link" href="about.html"><span class="uk-margin-small-right" uk-icon="users"></span> about</a></li>
+            <li><a class="nav-link shop-link" href="projects.html"><span class="uk-margin-small-right" uk-icon="database"></span> projects</a></li>
+            <li><a class="nav-link" href="contact.html"><span class="uk-margin-small-right" uk-icon="receiver"></span> contact</a></li>
+            <div class="nav-icons">
+              <a href="" class="uk-icon-button altBtn uk-margin-small-right" uk-icon="instagram"></a>
+                <a href="" class="uk-icon-button altBtn uk-margin-small-right" uk-icon="facebook"></a>
+                <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="whatsapp"></a>
+            </div>
+        </ul>
+    </div>
+</div>
+<body>
+    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push; min-height: 400; max-height: 760">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="img/connn.jpg" alt="" uk-cover>
+                <div class="uk-overlay slide-overlay uk-overlay-primary uk-position-center uk-position uk-text-center uk-light">
+                    <h2 class="uk-margin-remove">Building an Awesome Home </h2>
+                    <p class="uk-margin-remove">We create a befiting home for you in your choiced location within and outside Lagos.</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/plan2.jpg" alt="" uk-cover>
+                <div class="uk-overlay slide-overlay uk-overlay-primary uk-position-center uk-position uk-text-center uk-light">
+                    <h2 class="uk-margin-remove">Building Design Architecture</h2>
+                    <p class="uk-margin-remove">We help you recognize the relationship between design and construction.</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/conn5.jpg" alt="" uk-cover>
+                <div class="uk-overlay slide-overlay uk-overlay-primary uk-position-center uk-position uk-text-center uk-light">
+                    <h2 class="uk-margin-remove">Estate Planning Infastructure</h2>
+                    <p class="uk-margin-remove">We help you prepare for settlement of your personal properties.</p>
+                </div>
+            </li>
+        </ul>
+    
+        <div class="uk-light">
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        </div>
+    
+    </div>
+
+    <div class="second-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 second-rowCard">
+                    <img src="img/svg/sketch.svg" alt="">
+                    <h3>Design Process</h3>
+                    <p>We help you recognize the relationship between design and construction. We make awesome designs, you can check out our design from <a href="./projects.html#houses">here.</a></p>
+                </div>
+                <div class="col-lg-3 second-rowCard">
+                    <img src="img/svg/supervisor.svg" alt="">
+                    <h3>Supervision</h3>
+                    <p>You can count on us to put out your desires in real life. We supervise accountably in the progress
+                      of works. We make sure that the design is visualized as on prototype.
+                    </p>
+                </div>
+                <div class="col-lg-3 second-rowCard">
+                    <img src="img/svg/budget.svg" alt="">
+                    <h3>Budget Planning</h3>
+                    <p>Do you have a low budget?an create a platform to help you have your own home.
+                      Our desire is utmost to meet your plans.
+                    </p>
+                </div>
+                <div class="col-lg-3 second-rowCard">
+                    <img src="img/svg/real-estate.svg" alt="">
+                    <h3>Build a Home For You</h3>
+                    <p>We create a befiting home for you in your choiced location within and outside Lagos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="third-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 thirdRowText">
+                    <h3>Who are we?</h3>
+                    <p>
+                      We are a construction company with specialization in Building Planning, Construction,
+                      Budget Planning, and Supervision. We are located in Lagos Nigeria but equally operate outside Lagos.
+
+                    </p>
+                    <a href="about.html">Learn more <span uk-icon="arrow-right"></span></a>
+                </div>
+                <div class="col-lg-5">
+                    <img src="img/og.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fourth-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 header">
+                    <h2>Quick Glance at our Projects</h2>
+                </div>
+                <div class="col-lg-12">
+                    <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
+                        <div>
+                            <a class="uk-inline" href="img/HOUSE6.jpg" data-caption="Caption 1">
+                                <img src="img/HOUSE6.jpg"">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline" href="img/HOUSE2.jpg" data-caption="Caption 2">
+                                <img src="img/HOUSE2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline" href="img/HOUSE15.jpg" data-caption="Caption 3">
+                                <img src="img/HOUSE15.jpg" alt="">
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a class="uk-inline" href="img/house (1).jpeg" data-caption="Caption 1">
+                                <img src="img/house (1).jpeg"">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline" href="img/house (2).jpeg" data-caption="Caption 2">
+                                <img src="img/house (2).jpeg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline" href="img/houseX.jpeg" data-caption="Caption 3">
+                                <img src="img/houseX.jpeg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 project-link uk-text-right"><a href="projects.html">View Projects <span uk-icon="arrow-right"></span></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="col-lg-12 header">
+                <h2>Testimonials</h2>
+            </div>
+            <div class="lmao swiperPrev"><button><span uk-icon="arrow-left"></span></button></div>
+            <div class="lmao1 swiperNext"><button><span uk-icon="arrow-right"></span></button></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>Osinagood have been an awesome friend. He is trustworthy to give you what you desire to have in your home.
+                  <p>
+                <h3>Franc Enemuo</h3>
+                <img src="img/francis.jpg" alt="francis enemuo">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>I recommend him as a good designer of a kind. Accountable and trustworthy. He is top there as one of the best in the business.<p>
+                <h3>Chiname</h3>
+                <img src="img/chiname.jpg" alt="chiname">
+              </div>
+            </div>
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit placeat necessitatibus esse nesciunt odio facilis in, eum eius fuga enim cupiditate, a commodi velit sit libero quia unde, hic perferendis?<p>
+                <h3>Jane Doe</h3>
+                <img src="img/avatar.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit placeat necessitatibus esse nesciunt odio facilis in, eum eius fuga enim cupiditate, a commodi velit sit libero quia unde, hic perferendis?<p>
+                <h3>Jane Doe</h3>
+                <img src="img/avatar.png" alt="">
+              </div>
+            </div> -->
+          </div>
+          
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+        </div>
+    </div>
+
+<!-- Footer -->
+<section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>OsinaGood Construction Limited</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt distinctio id nostrum hic, vel animi aspernatur cumque tempore? Eos ipsa </p>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="projects.html"><i class="fa fa-angle-double-right"></i>Projects</a></li>
+            <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>08060655084</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>08060655084</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>08060655084</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>	
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white"> 
+          <p class="h6"><span>&copy All right Reserved.</span><a class="text-green ml-2" href="index.html" target="_blank">OsinaGood Construction Limited</a></p>
+        </div>
+        </hr>
+      </div>	
+    </div>
+  </section>
+  <!-- ./Footer -->
+<script src="js/main.js"></script>
+<script src="lib/bootstrap/bootstrap.min.js"></script>
+<script src="lib/bootstrap/js/popper.min.js"></script>
+<!-- SWIPER JS -->
+<script src="lib/swiper/js/swiper.min.js"></script>
+<script src="lib/bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+    },
+    loop: true,
+    navigation: {
+      nextEl: '.swiperNext',
+      prevEl: '.swiperPrev',
+    },
+  });
+  
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+
+</script>
+</body>
+</html>
